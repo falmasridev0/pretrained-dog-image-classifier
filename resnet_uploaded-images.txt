@@ -1,0 +1,83 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = resnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:           Affenpinscher_02.jpg  label:              affenpinscher
+ 2 key: Chevrolet_Corvette_Stingray_01.jpeg  label: chevrolet corvette stingray
+ 3 key:     American_Pekin_duck_01.jpg  label:        american pekin duck
+ 4 key:           Affenpinscher_01.jpg  label:              affenpinscher
+
+     MATCH:
+
+          Affenpinscher_02.jpg: 
+Real:              affenpinscher   Classifier: affenpinscher, monkey pinscher, monkey dog
+
+          Affenpinscher_01.jpg: 
+Real:              affenpinscher   Classifier: affenpinscher, monkey pinscher, monkey dog
+
+ NOT A MATCH:
+
+Chevrolet_Corvette_Stingray_01.jpeg: 
+Real: chevrolet corvette stingray   Classifier:          sports car, sport car
+
+    American_Pekin_duck_01.jpg: 
+Real:        american pekin duck   Classifier:                          goose
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+     MATCH:
+
+          Affenpinscher_02.jpg: 
+Real:              affenpinscher   Classifier: affenpinscher, monkey pinscher, monkey dog  
+PetLabelDog: 1  ClassLabelDog: 1
+
+          Affenpinscher_01.jpg: 
+Real:              affenpinscher   Classifier: affenpinscher, monkey pinscher, monkey dog  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+Chevrolet_Corvette_Stingray_01.jpeg: 
+Real: chevrolet corvette stingray   Classifier:          sports car, sport car  
+PetLabelDog: 0  ClassLabelDog: 0
+
+    American_Pekin_duck_01.jpg: 
+Real:        american pekin duck   Classifier:                          goose  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 4 # Matches: 2 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
+
+    Classfier dog program.
+    Classified using: resnet.
+    The number of images: 4.
+    The number of dog images: 2.
+    The number of images that are not dogs: 2.
+    
+    
+correct match: 50.0%
+correct dogs: 100.0%
+correct breed: 100.0%
+correct notdogs: 100.0%
+
+
+images that classified as dogs but they aren't:
+
+
+
+
+images that classified as dogs but they are not the correct breed: 
+
+
+
+** Total Elapsed Runtime: 0:0:0
